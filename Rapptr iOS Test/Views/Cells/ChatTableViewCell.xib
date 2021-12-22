@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="106" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-U7-rWh">
+                        <rect key="frame" x="73" y="24" width="211" height="16"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-Zj-XQG">
+                        <rect key="frame" x="73" y="44" width="211" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4D-p6-QTk">
+                                <rect key="frame" x="8" y="8" width="195" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Team, can we give job applicants taking this test some examples of the types of apps they'd be working on if they joined our team?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R4D-p6-QTk" firstAttribute="leading" secondItem="eGI-Zj-XQG" secondAttribute="leading" constant="8" id="AxI-Yo-a55"/>
+                            <constraint firstItem="R4D-p6-QTk" firstAttribute="top" secondItem="eGI-Zj-XQG" secondAttribute="top" constant="8" id="qzp-CY-iU3"/>
+                            <constraint firstAttribute="trailing" secondItem="R4D-p6-QTk" secondAttribute="trailing" constant="8" id="xa4-Tr-maP"/>
+                            <constraint firstAttribute="bottom" secondItem="R4D-p6-QTk" secondAttribute="bottom" constant="8" id="yf0-0S-cat"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="AbbyImage" translatesAutoresizingMaskIntoConstraints="NO" id="PXp-1j-2Ea">
+                        <rect key="frame" x="16" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="cog-0e-TNM"/>
+                            <constraint firstAttribute="height" constant="50" id="ufd-5D-Mze"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="PXp-1j-2Ea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Gm-gt-10w"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="D0q-7c-LAo"/>
+                    <constraint firstAttribute="trailing" secondItem="NHn-U7-rWh" secondAttribute="trailing" constant="36" id="FpK-kj-EUS"/>
+                    <constraint firstItem="eGI-Zj-XQG" firstAttribute="leading" secondItem="PXp-1j-2Ea" secondAttribute="trailing" constant="7" id="HZt-8U-EGs"/>
+                    <constraint firstAttribute="trailing" secondItem="eGI-Zj-XQG" secondAttribute="trailing" constant="36" id="LHu-ch-py5"/>
+                    <constraint firstItem="NHn-U7-rWh" firstAttribute="leading" secondItem="PXp-1j-2Ea" secondAttribute="trailing" constant="7" id="Pa7-rj-suJ"/>
+                    <constraint firstItem="PXp-1j-2Ea" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="WI6-9j-zwb"/>
+                    <constraint firstAttribute="bottom" secondItem="eGI-Zj-XQG" secondAttribute="bottom" id="Ytf-SA-sKk"/>
+                    <constraint firstItem="eGI-Zj-XQG" firstAttribute="top" secondItem="NHn-U7-rWh" secondAttribute="bottom" constant="4" id="wIK-L5-vqH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImage" destination="PXp-1j-2Ea" id="0Xq-lf-GWY"/>
+                <outlet property="body" destination="R4D-p6-QTk" id="LKm-6c-fqr"/>
+                <outlet property="bodyInsetView" destination="eGI-Zj-XQG" id="zLr-Mn-iR8"/>
+                <outlet property="header" destination="NHn-U7-rWh" id="gmc-dR-cCO"/>
+            </connections>
+            <point key="canvasLocation" x="88.317757009345783" y="86.825053995680349"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AbbyImage" width="126" height="126"/>
+    </resources>
+</document>

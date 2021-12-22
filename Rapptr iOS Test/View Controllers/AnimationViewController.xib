@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
+            <connections>
+                <outlet property="fadeButton" destination="R4X-eb-ZnV" id="N6C-BJ-cd7"/>
+                <outlet property="logoView" destination="TLT-lz-75c" id="gQQ-tz-KRb"/>
+                <outlet property="topConstraint" destination="Tio-FV-2Mj" id="Fyd-En-XM0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4X-eb-ZnV">
+                    <rect key="frame" x="30" y="841" width="368" height="55"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="VOk-Ik-vWh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Fade In"/>
+                    <connections>
+                        <action selector="didPressFade:" destination="-1" eventType="touchUpInside" id="9GZ-O4-LtL"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLT-lz-75c">
+                    <rect key="frame" x="30" y="283" width="368" height="95"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TLT-lz-75c" secondAttribute="height" multiplier="368:95" id="Ail-mM-Fpp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TLT-lz-75c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="8i6-oN-FDz"/>
+                <constraint firstAttribute="bottom" secondItem="R4X-eb-ZnV" secondAttribute="bottom" constant="30" id="Cbf-AW-wao"/>
+                <constraint firstAttribute="trailing" secondItem="TLT-lz-75c" secondAttribute="trailing" constant="30" id="RnC-3M-2HY"/>
+                <constraint firstItem="TLT-lz-75c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="283" id="Tio-FV-2Mj"/>
+                <constraint firstAttribute="trailing" secondItem="R4X-eb-ZnV" secondAttribute="trailing" constant="30" id="lqG-5k-iSp"/>
+                <constraint firstItem="R4X-eb-ZnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ru5-yf-K4d"/>
+            </constraints>
+            <point key="canvasLocation" x="33.644859813084111" y="53.779697624190071"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
