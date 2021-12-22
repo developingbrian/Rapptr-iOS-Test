@@ -1,13 +1,9 @@
-Hello!
+# Rapptr Labs iOS Test
 
-Your task is to use the provided project to create the iOS app displayed in the provided PDF.
+Rapptr Labs Test for Apprenticeship.  
 
-You will find more detailed instructions as comments inside of the project.
+LoginViewController UI was written entirely programatically.  
 
-All required design assets are already inside of the provided project.
+Animation takes SVG data and makes them UIBezierPaths to draw the logo to the screen.  This then allows me to add stroke, fills, and importantly animation to those properties.
 
-Bonus Points:
-- Show you can create UI and Auto Layout programmatically as well as through Storyboard/Interface Builder
-- Show us you can add Cocoapods to this project. We will allow the use of one single pod.
-
-Good luck!
+CocoaPods was utilized, and the chosen Pod was SDWebImage.
